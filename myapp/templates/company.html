@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+{% load static%}
+{% include 'header.html'%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Authority</title>
+    <style type="text/css">
+        *{
+    margin :0px;
+    padding :0px;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+
+}
+body{
+    background-color:#f2f2f2;
+}
+.heading{
+   width:90%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:column;
+   text-align:center;
+   margin:20px auto;
+}
+.heading h1{
+    font-size:50px;
+    color:#000;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.heading h1::after{
+   content:"";
+   position:absolute;
+   width:100%;
+   height:4px;
+   display:block;
+   margin:0 auto;
+   background-color:#4caf50;
+}
+.heading p{
+    font-size:18px;
+     color:#666;
+    margin-bottom:35px;
+}
+.container{
+    width:90%
+    margin:0 auto;
+    padding:10px 20px;
+}
+.about{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+     flex-wrap:wrap;
+
+}
+.about-image{
+    flex:1;
+    margin-right:40px;
+    overflow:hidden;
+
+}
+.about-image img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    transition:0.5 ease;
+}
+.about-image:hover img{
+    transform :scale(1.2);
+}
+.about-content{
+    flex:1;
+}
+.about-content h2{
+    font-size:23px;
+    margin-bottom:15px;
+    color:#333;
+}
+.about-content p{
+    font-size:18px;
+    line-height:1.5;
+    color:#666;
+}
+.about-content .read-more{
+    display:inline-block;
+    padding:10px 20px;
+    background-color:#3e8e41;
+     font-size:19px;
+    color:#fff;
+    text-decoration:  none;
+    border-radius:25px;
+    margin-top:15px;
+    transition:0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color:#3e8e41;
+
+}
+@media screen and (max-width :768px){
+       .heading{
+            padding:0px 20px;
+        }
+        .heading h1{
+           font-size:36px;
+        }
+        .heading p{
+           font-size:17px;
+           margin-bottom:0px;
+        }
+        .container{
+            padding:0px;
+        }
+        .about{
+             padding:20px;
+        }
+        .about-image{
+             margin-right:0px;
+               margin-bottom:20px;
+        }
+        .about-content{
+             padding:0px;
+             font-size:16px;
+        }
+        .about-offer{
+             padding:0px;
+             font-size:16px;
+        }
+      .about-content .read-more{
+             font-size:16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="heading">
+    <h1>Medicine Information Authority</h1>
+
+</div>
+<div class="container">
+    <section class="about">
+        <div class="about-image">
+            <img src="{%static 'image/companyimg.jpg'%}">
+        </div>
+        <div class="about-content">
+            <h2>
+                Medicine Authority is the leading organization responsible for the regulation, approval, and monitoring of pharmaceuticals and healthcare products. Our primary mission is to ensure the safety, efficacy, and quality of medicines available to the public.
+
+               We work closely with healthcare professionals, pharmaceutical companies, and regulatory bodies to uphold the highest standards in the healthcare industry.
+            </h2>
+        </div>
+<div class="about-offer">
+    <h4>
+The Medicine Information Authority is a reputable and vital organization dedicated to ensuring the safety, efficacy, and quality of pharmaceuticals and healthcare products available to the public. Its primary mission encompasses a range of crucial functions in the healthcare industry, all aimed at safeguarding the well-being of individuals and promoting the highest standards of healthcare:</h4>
+    <h5>Medicine Approval and Regulation:</h5>
+    <p>
+    he Medicine Information Authority plays a pivotal role in the approval and regulation of medicines and healthcare products. It evaluates and assesses the safety and effectiveness of medications, ensuring that they meet stringent regulatory standards before they reach the market. This process involves rigorous testing, analysis, and scrutiny of pharmaceuticals to ascertain their suitability for use.
+    </p>
+    <h5>Drug Safety Monitoring: </h5>
+    <p>
+         Ensuring ongoing safety is a fundamental responsibility of the authority. It continually monitors the safety of approved drugs and healthcare products, tracking adverse reactions and potential risks associated with their use. When safety concerns arise, the Medicine Information Authority takes prompt action to mitigate risks, including issuing warnings, recalls, or regulatory updates.
+    </p>
+    <h5>Healthcare Product Testing:</h5>
+    <p> In addition to medications, the authority conducts comprehensive testing of various healthcare products, such as medical devices, equipment, and diagnostic tools. This rigorous testing process helps guarantee the reliability and accuracy of these products, fostering trust among healthcare professionals and the public.</p>
+    <h5>Public Education and Awareness:</h5>
+    <p>The Medicine Information Authority is committed to educating and raising awareness among both healthcare professionals and the general public. It provides accessible, reliable, and up-to-date information about medicines and healthcare products, enabling individuals to make informed decisions about their health and well-being. This educational outreach helps prevent misuse, promotes responsible healthcare practices, and enhances overall public health.</p>
+    <h5>Collaboration and Regulation: </h5>
+    <p>
+        The authority collaborates closely with healthcare professionals, pharmaceutical companies, and regulatory bodies to establish and uphold industry standards. Through partnerships and regulatory guidance, it ensures that pharmaceutical companies adhere to ethical practices and maintain the highest standards of quality and safety in their products.
+</p>
+</div>
+        <div class="about-choose">
+
+            <pre>
+                In summary, the Medicine Information Authority is an essential institution that acts as a guardian of public health,
+                working diligently to guarantee that the medicines and healthcare products available to the public are safe, effective,
+                and of the highest quality. Through its regulatory oversight, ongoing safety monitoring, and educational efforts,
+                it plays a pivotal role in advancing healthcare standards and empowering individuals to make informed choices about
+                their health.
+            </pre>
+</div>
+    </section>
+</div>
+</body>
+</html>
+<!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; MediInfo</p>
+    </div>
+    <!-- /.container -->
+  </footer>
