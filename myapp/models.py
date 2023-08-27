@@ -12,3 +12,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=30)
     desc = models.TextField(max_length=200)
     postby= models.CharField(max_length=20)
+
+class Comment(models.Model):
+    msg=models.CharField(max_length=100)
+    pid=models.ForeignKey(Blog, models.CASCADE)
